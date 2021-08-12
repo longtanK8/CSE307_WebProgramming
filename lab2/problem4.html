@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>problem 4</title>
+</head>
+<body>
+	<form action="respond.html" method="post">
+		<table cellspacing="0" border="1px">
+			<colgroup>
+				<col width="150px">
+				<col width="300px">
+				<col width="230px">
+			</colgroup>
+			<tfoot align="center">
+				<tr>
+					<td></td>
+					<td colspan="2">
+						<button type="submit">Submit</button>
+						<button type="reset">Clear This Form</button>
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>
+						<label for="lname"><b>Last Name</b></label>
+					</td>
+					<td colspan="2">
+						<input type="text" name="lname" id="lname" required="" autofocus="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="fname"><b>First Name</b></label>
+					</td>
+					<td colspan="2">
+						<input type="text" name="fname" id="fname" required="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="address"><b>Address</b></label>
+					</td>
+					<td colspan="2">
+						<textarea cols="20" rows="4" id="address" required=""></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="city"><b>City</b></label>
+					</td>
+					<td>
+						<input type="text" name="city" id="city" required="">
+					</td>
+					<td>
+						<table border="1px" cellspacing="0">
+							<tr>
+								<td><label for="state">State</label></td>
+								<td><input type="text" name="state" id="state" required=""></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="zcode"><b>Zip/Postal Code</b></label>
+					</td>
+					<td colspan="2">
+						<input type="number" name="zcode" id="zcode" required="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="country"><b>Country</b></label>
+					</td>
+					<td colspan="2">
+						<select name="country" id="country">
+							<option value="Bulgaria" selected="">Bulgaria</option>
+							<option value="Indonesia">Indonesia</option>
+							<option value="US">United States</option>
+							<option value="Vietnam">Việt Nam</option>
+							<option value="UK">United Kingdom</option>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="ccode"><b>Phone(country code, area code, number)</b></label>
+					</td>
+					<td colspan="2">
+						(+<input type="number" name="country-code" id="ccode" required="">)
+						<input type="number" name="area-code" required="">
+						-<input type="number" name="phone-number" required="">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
