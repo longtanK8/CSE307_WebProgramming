@@ -1,0 +1,16 @@
+table th{
+    color: white;
+    background-color: #50B506;
+}
+table tr:nth-child(odd){
+    background-color: white !important;
+}
+table tr:nth-child(even){
+    background-color: #ECECD8 !important;
+}
+img{
+    max-width: 20px;
+}
+table{
+    border-color: white;
+}

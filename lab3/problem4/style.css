@@ -1,0 +1,30 @@
+fieldset{
+	background-color: #595959;	
+	margin-left:35%;
+	margin-right:35%;
+}
+.fading{
+	color: #A0A29B;
+}
+.title{
+	font-style: italic;
+	color: #fff;
+}
+.content{
+	color: #D4C987;
+}
+.content2{
+	color: #E0121C;
+	font-weight:bold ;
+}
+.status{
+	color: #D36732;
+	font-weight: bold;
+}
+span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: lightgreen;
+}
