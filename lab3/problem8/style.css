@@ -1,0 +1,38 @@
+.product{
+    max-width: 280px;
+    /*max-height: 360px;*/
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product-image{
+    display: flex;
+    justify-content: center;
+}
+img{
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.product-name h3{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+}
+.product-price p{
+    font-weight: bold;
+    color: red;
+    margin: 0;
+}
+.discription{
+    margin-top: 10px;
+}
+.discription p{
+    margin:0 ;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

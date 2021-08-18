@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+hr.cut-line{
+    border: 1px dashed grey;
+}
+p{
+    font-size: 14px;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 540px;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content, .news-sale{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 540px;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*title-news*/
+.content #red-bar{
+    position: absolute;
+    content: "";
+    width: 6px;
+    left: 12px;
+    top: 6px;
+    bottom: 7px;
+    transform: skew(-20deg);
+    -webkit-transform:skew(-20deg);
+    -khtml-transform:skew(-20deg);
+    background-color: #dd3333;
+}
+.content .title-news{
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5AAAD0 ;
+}
+.icon-play{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: gray;
+    color: white;
+    margin-right: 10px;
+}
+.title-news p{
+    margin: 0;
+    padding-left: 30px;
+}
+/* h1 css */
+.name-news{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content h1{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.content #text{
+    padding-left: 10px;
+}
+.content h1 i{
+    font-size: 14px;
+    padding: 4px;
+}
+/* subtitile - time */
+.time span{
+    margin: 0;
+    text-transform: uppercase;
+    color: #898B97;
+    font-size: 12px;
+    padding-top: 3px;
+}
+.time{
+    padding-left: 10px;
+    color: #ccc;
+    margin-right:10px ;
+}
+/* related-news */
+.news-other li{
+  margin-left: -25px;
+  padding: 2px;
+  font-size: 14px;
+}
+/*----------------------*/
+.news-sale h1{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.news-sale p {
+    font-weight: 600;
+}
+#block2-text{
+    padding-top: 20px;
+}
+/*user*/
+.user{
+    display: flex;
+    align-items: center;
+}
+.user-icon img{
+    border-radius: 50%;
+    width: 80%;
+    object-fit: cover;
+    height: 50px;
+    flex-shrink: 0;
+}
+.user-name p{
+    color: #21C1E0;
+    font-size: bold;
+}
+.more-infor p {
+    color: lightgrey;
+}
