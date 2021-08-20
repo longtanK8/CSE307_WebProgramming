@@ -1,0 +1,13 @@
+.main-list:hover .sublist{
+	display: block;
+}
+.sublist{
+	display: none;
+	font-size: 16px;
+	color: gray;
+	list-style: none;
+}
+.main-list{
+	list-style: none;
+	font-size: 20px;
+}
