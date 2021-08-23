@@ -1,0 +1,81 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.sale{
+	background-color: #EEEBE4;
+	max-width: 720px;
+	height: 300px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	column-gap: 20px;
+	padding: 50px 60px 50px 60px;
+}
+.tag{
+	width: 140px;
+	height: 220px;
+	background-color: white;
+	border: 3px solid #D6D3CD;
+	border-radius: 5px;
+	text-align: center;
+	padding: 0 20px 20px 20px;
+}
+h1{
+	font-size: 24px;
+	color: #86CAE7;
+}
+.price{
+	color: orange;
+	font-size: 36px;
+	font-weight: bolder;
+}
+.period{
+	color: grey;
+	font-size: 14px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid lightgrey;
+}
+.benefit-infor{
+	padding: 10px;
+	color: lightgrey;
+	font-size: 14px;
+}
+.benefit-infor span{
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+button{
+	padding: 10px 20px 10px 20px;
+	background-color:#FD935C;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+.recommanded{
+	display: none;
+	width: 90%;
+	padding: 2px;
+}
+.tag:hover .recommanded{
+	display: block;
+	background-color:#37BBE6;
+	color: white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius:  10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tag:hover{
+	height: 240px;
+	background-color: white;
+	border: 4px solid #37BBE6;
+}
+.tag:hover button{
+	background-color:#37BBE6;
+}

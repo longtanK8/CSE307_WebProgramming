@@ -1,0 +1,124 @@
+
+	input{
+		width: 110px;
+	}
+	hr{
+		border-color: lightgrey;
+	}
+	.container{
+		background-color: #F1F1F1;
+		width: 70%;
+		border: 1px solid black;
+		box-sizing: border-box;
+		display: flex;
+		padding: 2px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content-aside-left{
+		width: 18%;
+		text-align: left;
+		margin-right: 2px;
+	}
+	.content-aside-right{
+		width: 20%;
+		text-align: center;
+		display: block;
+		align-items: center;
+		margin-left: 2px;
+	}
+	.content-center{
+		background-color: white;
+		border: 1px solid black;
+		width: 67%;
+	}
+	/*aside -left*/
+	.content-aside-left #home{
+		font-weight: bolder;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.content-left-css{
+		font-weight: bold;
+		color: #910D0B;
+		margin: 0;
+	}
+	.content-infor{
+		margin-top: 0;
+		padding: 0;
+	}
+	.home-button{
+		display: flex;
+		align-items: center;
+	}
+	.home-button img{
+		max-width: 20px;
+		margin-right:4px;
+		margin-bottom: 5px;
+	}
+	/*center*/
+	.content-center{
+		padding: 4px;
+	}
+	#button-left{
+		background-image: url(left.png);
+		background-repeat: no-repeat;
+		background-size: 15px;
+		background-position: left center;
+		background-origin: border-box;
+		background-color: white;
+		padding: 2px 30px 2px 30px;
+	}
+	#button-right{
+		background-image: url(right.png);
+		background-repeat: no-repeat;
+		background-size: 15px;
+		background-position: right center;
+		background-origin: border-box;
+		background-color: white;
+		padding: 2px 40px 2px 40px;
+	}
+	/*---------tutorial-------------*/
+	.content-tutorial{
+		display: flex;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+	}
+	.image{
+		width: 25%;
+	}
+	.image img{
+		width: 130px;
+	}
+	.discrip{
+		width: 75%;
+	}
+	.discrip .intro{
+		font-weight: bold;
+	}
+	.title-content{
+		font-weight: bold;
+		color: white;
+		padding: 2px 2px 2px 5px;
+		background-color: grey;
+		margin-top: -1px;
+	}
+	.more-infor{
+		color: red;
+	}
+	/* ------- right----- */
+	.tag-right-infor{
+		background-color: white;
+		border: 2px solid grey;
+		margin-top: 1px;
+	}
+	.tag-right-infor #advertise{
+		padding: 10px 20px 10px 20px;
+		border: none;
+		background-color: lightblue;
+		color: darkblue;
+	}
+	.tag-right-infor .temp{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
