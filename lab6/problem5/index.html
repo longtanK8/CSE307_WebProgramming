@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>problem 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let products = [
+			{
+				ID: 1,
+				Name: 'Samsung',
+				Quantity: 20,
+				Price: 1000
+			},
+			{
+				ID: 2,
+				Name: 'Nokia',
+				Quantity: 20,
+				Price: 1000
+			},
+			{
+				ID: 3,
+				Name: 'Xiaomi',
+				Quantity: 20,
+				Price: 1000
+			}
+		]
+		print(products);
+		addInHead(products);
+		print(products);
+		addAtTail(products);
+		print(products);
+		searchByName(products);
+		removeById(products);
+		sortByName(products);
+		print(products);
+
+		function print(arr) {
+			for (var i = 0; i <arr.length; i++) {
+				console.log(arr[i]);
+			}
+			console.log('------------------------------------');
+		}
+		function addInHead (arr) {
+			arr.unshift({
+				ID: 0,
+				Name: 'iPhone',
+				Quantity: 20,
+				Price: 1300
+			})
+		}
+		function addAtTail (arr) {
+			arr.push({
+				ID: arr[arr.length-1].ID + 1,
+				Name: 'Motorolla',
+				Quantity: 20,
+				Price: 1500
+			})
+		}
+		function searchByName (arr) {
+			let name = prompt("Please type the product to find: ");
+			let arr1 = [];
+			let i =0;
+			for (; i<products.length; i++){
+				if (products[i].Name.indexOf(name)>-1) {
+					console.log(products[i]);
+					arr1.push(products[1]);
+				}
+			}
+			if(i == arr.length && arr1.length<1){
+					console.log("No product found!");
+			}
+		}
+		function removeById (arr) {
+			let id = prompt("Please type the product ID to delete: ");
+			for (let i =0; i<products.length; i++){
+				if (products[i].ID == id) {
+					let name = products[i].Name;
+					products.splice(i,1);
+					let res = `product: ${name} has been deleted!`;
+					console.log(res);
+					return;
+				}
+			}
+			console.log("No product found!");
+		}
+		function sortByName(str) {
+		    var i = 0, j;
+		    while (i < str.length) {
+		        j = i + 1;
+		        while (j < str.length) {
+		            if (str[j].Name < str[i].Name) {
+		                var temp = str[i].Name;
+		                str[i].Name = str[j].Name;
+		                str[j].Name = temp;
+		            }
+		            j++;
+		        }
+		        i++;
+		    }
+		    console.log("The product list has been sorted by name!");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+img{
+	max-width: 100%;
+}
+.line-first{
+	max-width: 320px;
+}
+.line-second{
+	/*min-width: 500px;*/
+}
+.opening-line{
+	background-color: #2D3E50 ;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+}
+.opening-line a{
+	color: #fff;
+}
+
+.form-block i{
+	position: absolute;
+}
+
+/*mid-header*/
+.mid-header{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.logo-block img{
+	max-height: 90px;
+	width: auto;
+}
+.search-group{
+	padding-top: 24px;
+}
+.cart-icon{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	background-color: #E63C27;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+}
+.cart-icon i{
+	line-height: 50px;
+}
+.quantity-cart{
+	padding-top: 3px;
+	margin-bottom: 0px;
+	color: #6D7F7F;
+	font-size: 16px;
+}
+.price-cart{
+	margin-bottom: 0px;
+	color: #E63C27;
+	font-weight: bold;
+}
+.shopping-group{
+	padding-top: 17px;
+}
+@media (max-width: 767.98px){
+	.mid-header{
+		height: auto;
+	}
+	.mid-header .logo-block{
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mid-header .shopping-group{
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mobile-menu{
+		display: inline-block;
+	}
+	.desktop-menu{
+		display: none;
+	}
+}
+/*end mid-header*/
+/*bottom-header*/
+
+.bottom-header{
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav-menu{
+	padding: 0;
+	background-color: #652D92;
+	
+}
+.nav-menu ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.nav-menu .desktop-menu > ul > li, li > a {
+	display: inline-block;
+}
+.nav-menu li a{
+	color: #fff;
+	text-align: center;
+	padding: 10px 25px;
+	text-decoration: none;
+}
+.menu > li:hover > a, .menu .active {
+	background-color: #7839A9;
+	text-decoration: none;
+}
+.nav-menu li:hover ul{
+	display: block;
+	min-width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.submenu{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	width: 250px;
+	text-align: left;
+	padding: 10px;
+}
+.submenu li a{
+	color: #652D92;
+
+}
+.submenu li:hover a{
+	background-color: #652D92;
+	min-width: 230px;
+	text-decoration: none;
+	color: #fff;
+	padding-left: 15px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+/*mobile part*/
+.mobile-menu{
+	padding: 10px;
+	background-color: #652D92;
+	text-align: left;
+}
+.icon-list{
+	border: 1px solid #fff;
+	padding: 2px;
+	color: #fff;
+}
+.text-list-mobile{
+	color: #fff;
+}
+@media (min-width: 767.98px){
+	.mobile-menu{
+		display: none;
+	}
+	.bottom-header{
+		text-align: center;
+	}
+}
+/*end bottom-header*/
