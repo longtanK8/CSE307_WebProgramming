@@ -29,22 +29,22 @@
 				return 0;
 			}
 		}
-		function selectionSort(arr) {
+		function selectionSort(_arr) {
 		    let currentValueNewIndex;
-		    for (let i = 0; i < arr.length; i++) {
+		    for (let i = 0; i < _arr.length; i++) {
 		        currentValueNewIndex = i;
-		        for (let j = i + 1; j < arr.length; j++) {
-		            if (arr[currentValueNewIndex] > arr[j]) {
+		        for (let j = i + 1; j < _arr.length; j++) {
+		            if (_arr[currentValueNewIndex] > _arr[j]) {
 		                currentValueNewIndex = j;
 		            }
 		        }
 		        if (i !== currentValueNewIndex) {
-		            let temp = arr[i];
-		            arr[i] = arr[currentValueNewIndex];
-		            arr[currentValueNewIndex] = temp;
+		            let temp = _arr[i];
+		            _arr[i] = _arr[currentValueNewIndex];
+		            _arr[currentValueNewIndex] = temp;
 		        }
 		    }
-		    return arr;
+		    return _arr;
 		}
 		console.log(arr);
 		print(arr, "bf-sort");
