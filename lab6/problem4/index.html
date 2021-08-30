@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>problem 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let products = [
+			{
+				ID: 1,
+				Name: 'Samsung',
+				Quantity: 20,
+				Price: 1200,
+				Image: "https://cdn.tgdd.vn/Products/Images/42/234315/samsung-galaxy-a32-4g-thumb-tim-600x600-600x600.jpg"
+			},
+			{
+				ID: 2,
+				Name: 'Nokia',
+				Quantity: 20,
+				Price: 1500,
+				Image: "https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/01/09/image-removebg-preview.png"
+			},
+			{
+				ID: 3,
+				Name: 'Xiaomi',
+				Quantity: 20,
+				Price: 1100,
+				Image: "https://cdn.tgdd.vn/Products/Images/42/233241/xiaomi-mi-11-lite-4g-pink-1-600x600.jpg"
+			}
+		]
+		products.sort(compare);
+		print(products);
+
+		function print (arr) {
+			let printList = `
+			<p>Product list:</p>`;
+			for (let product of arr){
+				let add = `
+				<img src="${product.Image}" style="width: 200px;">
+				<p>ID: ${product.ID}</p>
+				<p>Name: ${product.Name}</p>
+				<p>Quantity: ${product.Quantity}</p>
+				<p>Price: ${product.Price}</p><br>`;
+				printList += add;
+			}
+			document.body.innerHTML = printList;
+			console.log(arr[0].ID); 
+		}
+		function compare(a, b){
+			if (a.Price > b.Price){
+				return 1;
+			}
+			else if (a.Price < b.Price){
+				return -1;
+			}
+			else {
+				return 0;
+			}
+		}
+		
+	</script>
+</body>
+</html>
