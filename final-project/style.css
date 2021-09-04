@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+font-family: 'Roboto', sans-serif;
+margin:0
+}
+/*Header*/
+#carou1{
+background-image: url("images/slider-1.jpg") !important;
+height: 600px;
+}
+#carou2{
+background-image: url("images/slider-2.jpg") !important;
+height: 600px;
+}
+.chairman img{
+width: 25%;
+margin-left: 18%;
+margin-top: 10%;
+height: auto;
+}
+
+#head-infor{
+background-color: #087DC2;
+padding-top: 6px;
+padding-bottom: 6px;
+position: fixed;
+top: 0px;
+width: 100%;
+}
+.phone-call{
+color: white;
+}
+.icon-search{
+color: #E8E8E6;
+text-align: right;
+}
+
+content-header{
+position: relative;
+}
+
+.container-nav{
+top: 36px;
+width: 100%;
+position: fixed;
+z-index: 99;
+display: flex;
+justify-content: center;
+background-color: #fff;
+}
+.header-logo{
+float: right;
+margin-right: 30%;
+}
+.header-logo a {
+width: fit-content;
+}
+.container-nav #logo{
+margin-top: 10px;
+max-height: 50px;
+margin-left: 10px;
+}
+.nav {
+list-style: none;
+}
+.nav:after {
+display: block;
+content: "";
+clear: both;
+}
+.nav li {
+float: left;
+}
+.nav a {
+height: 30px;
+display: inline-block;
+color: #AFAFAF;
+line-height: 20px;
+padding: 7px;
+text-decoration: none;
+text-transform: uppercase;
+border-radius: 5px;
+margin-top: 20px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.nav li:hover a {
+color: #087DC4;
+text-decoration: none;
+}
+.nav .active a {
+background-color: #FADE03;
+color: #333333 !important;
+text-decoration: none;
+}
+.tab-tour-content{
+position: absolute;
+top: 400px;
+margin-left: 17%;
+margin-right: 17%;
+z-index: 90;
+}
+#myTab{
+
+
+}
+.nav-link{
+color: #fff !important;
+background-color: #6DC82B;
+
+margin-bottom: 0 !important;
+padding: 20px !important;
+line-height: 10px !important;
+border-bottom-right-radius: 0px !important;
+border-bottom-left-radius: 0px !important;
+}
+
+.nav-link[aria-selected="true"]{
+background-color: #fff;
+opacity: 0.9;
+color: #333 !important;
+}
+#myTabContent{
+background-color: #fff;
+padding: 20px;
+padding-top: 30px;
+padding-bottom: 50px;
+opacity: 0.9;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+/*End of header*/
+/*scroll top button*/
+#myBtn{
+display: block;
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 35px;
+height: 35px;
+text-align: center;
+border: 2px solid #333;
+border-radius: 50%;
+}

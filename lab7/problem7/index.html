@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.alert {
+			color: white;
+			opacity: 0.7;
+			transition: opacity 0.8s;
+			margin-bottom: 20px;
+			position: relative;
+			font-weight: bolder;
+		}
+		.alert.danger{
+			background-color: red;
+		}
+		.alert.success{
+			background-color: green;
+		}
+		.alert.infor{
+			background-color: blue;
+		}
+		.alert.warning{
+			background-color: orange;
+		}
+		.alert p {
+			padding: 40px;
+		}
+		span{
+			right: 15px;
+			position: absolute;
+			color: white;
+			font-weight: bold;
+			font-size:  54px;
+			line-height: 20px;
+			cursor: pointer;
+		}
+		.button-close:hover{
+			color: black;
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<div class="alert danger">
+		<p>
+			<b>Danger!</b> Indicates a dangerous or potentially negative action.
+			<span class="button-close">&times;</span>
+		</p>
+	</div>
+
+	<div class="alert success">
+		<p>
+			<b>Success!</b> Indicates a successful or positive action.
+			<span class="button-close">&times;</span>
+		</p>
+	</div>
+
+	<div class="alert infor">
+		<p>
+			<b>Info!</b> Indicates a neutral informative change or action.
+			<span class="button-close">&times;</span>
+		</p>
+	</div>
+
+	<div class="alert warning">
+		<p>
+			<b>Warning!</b> Indicates a warning that might need attention.
+			<span class="button-close">&times;</span>
+		</p>
+	</div>
+
+
+
+	<script type="text/javascript">
+		var _listAlert = document.getElementsByClassName("button-close");
+		
+		for ( var i = 0; i < _listAlert.length; i++) {
+		 	_listAlert[i].onclick = function(){
+		    	var div = this.parentElement;
+		   		setTimeout(function(){
+		    		div.style.display = "none";
+		   		}, 100);
+		  }
+		}
+	</script>
+</body>
+</html>

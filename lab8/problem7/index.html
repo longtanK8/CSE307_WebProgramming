@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: lightgreen;
+			color: white;
+			cursor: pointer;
+			padding: 10px;
+			border-radius: 4px;
+		}
+
+		#myBtn:hover {
+			background-color: #ccc;
+		}
+		div{
+			max-width: 100px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Top Head</h1>
+	<div>
+		<p>
+			Thú mỏ vịt (tên khoa học Ornithorhynchus anatinus) là một loài động vật có vú đẻ trứng bán thuỷ sinh đặc hữu của miền đông Úc, gồm cả Tasmania. Thú mỏ vịt là một trong năm loài đơn huyệt còn tồn tại (cùng bốn loài thuộc họ Thú lông nhím), và cũng là loài thú có vú duy nhất đẻ trứng. Loài này có nguồn gốc từ Australasia. Thú mỏ vịt cũng là một trong số rất ít thú có độc. Vẻ ngoài bất thường của loài động vật có vú, chân rái cá, đuôi hải ly, mỏ vịt và sinh sản bằng cách đẻ trứng này đã khiến các nhà tự nhiên học châu Âu phải bối rối khi tiếp xúc lần đầu tiên. Những nhà khoa học tiên phong khám nghiệm xác một con thú mỏ vịt cho rằng đó là đồ nguỵ tạo từ nhiều bộ phận của các loài động vật khác nhau. Thú mỏ vịt có nhiều đặc điểm độc đáo, giúp loài này trở thành đối tượng đặc biệt quan trọng trong ngành sinh học tiến hóa và biểu trưng của Úc. Trong văn hoá một số dân tộc bản địa của Úc, loài này còn đóng vai trò thực phẩm. Thú mỏ vịt còn là linh vật của nhiều sự kiện cấp quốc gia và xuất hiện trên mặt sau đồng hai mươi xu của Úc, đồng thời là loài vật biểu tượng của bang New South Wales.
+		</p>
+	</div>
+	<button id="myBtn">^</button>
+
+	<script type="text/javascript">
+		// let mybutton = document.querySelector("#myBtn");
+		// window.onscroll = () => {
+		//     if (window.scrollY > 0) {
+		//         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		// 		    mybutton.style.display = "block";
+		// 		} else {
+		// 		    mybutton.style.display = "none";
+		// 		}
+		//     }
+		// };
+		// function topFunction() {
+		//   document.body.scrollTop = 0;
+		//   document.documentElement.scrollTop = 0;
+		// }
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				if($(this).scrollTop() > 100){
+					$('#myBtn').fadeIn();
+				}else{
+					$('#myBtn').fadeOut();
+				}
+			});
+		});
+		$('#myBtn').click(function(){
+			$('html, body').animate({ scrollTop: 0}, 600);
+		});
+	</script>
+</body>
+</html>
