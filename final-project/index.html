@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR20YljHUaRpmC_9YKoZPNr78eVvvkPLsulPJ-dX3uByDXrE9mL3Yhp65h8">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -32,7 +35,14 @@
 				    </div>
 				    <div class="carousel-item">
 				    	<div id="carou2">
-				    		
+				    		<div class="carou-text">
+								<h3 class="uppercase">A COMPLETE TRAVEL THEME</h3>
+								<p style="color: #fff;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<a>
+								    <span class="button-link">Click me</span>
+								</a>
+
+			              	</div>
 				    	</div>
 				    </div>
 				  </div>
@@ -57,7 +67,7 @@
 				
 			</div>
 			<div class="container-nav" id="menu-bar">
-				<div class="container-fluid">
+				<div class="container-fluid desktop-menu">
 					<div class="row">
 						<div class="col-md-4">
 							<div class="header-logo">
@@ -71,8 +81,96 @@
 								<ul class="nav">
 									<li class="active"><a href="#">Trang chủ</a></li>
 									<li><a href="#">Giới thiệu</a></li>
-									<li><a href="#">Du lịch trong nước</a></li>
-									<li><a href="#">Du lịch nước ngoài</a></li>
+									<li><a href="#">Du lịch trong nước</a>
+										<nav class="submenu">
+											<ul>
+												<li><a href="">DU LỊCH MIỀN BẮC</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Sapa</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Hà Nội</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Hạ Long</a>
+															<hr>
+														</li>
+															
+													</ul>
+												</li>
+												<li><a href="">DU LỊCH MIỀN TRUNG</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Đà Nẵng</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Phú Yên</a>
+															<hr>
+														</li>	
+													</ul>
+												</li>
+												<li><a href="">DU LỊCH MIỀN NAM</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Côn Đảo</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Phú Quốc</a>
+															<hr>
+														</li>	
+													</ul>
+												</li>
+											</ul>
+										</nav>
+									</li>
+									<li>
+										<a href="#">Du lịch nước ngoài</a>
+										<nav class="submenu">
+											<ul>
+												<li><a href="">DU LỊCH CHÂU Á</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Hàn Quốc</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Nhật Bản</a>
+															<hr>
+														</li>
+													</ul>
+												</li>
+												<li><a href="">DU LỊCH CHÂU ÂU</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Anh</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Nga</a>
+															<hr>
+														</li>	
+													</ul>
+												</li>
+												<li><a href="">DU LỊCH CHÂU MỸ</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Mỹ</a>
+															<hr>
+														</li>
+														<li>
+															<a href="">Du lịch Canada</a>
+															<hr>
+														</li>	
+													</ul>
+												</li>
+											</ul>
+										</nav>
+									</li>
 									<li><a href="#">Tin tức</a></li>
 									<li><a href="#">Liên hệ</a></li>
 								</ul>
@@ -80,6 +178,129 @@
 						</div>
 					</div>
 				</div>
+				<div class="mobible-menu">
+					<div id="mobible-menu" class="nav-mobile-menu">
+						<form class="d-flex search-bar">
+							<select style="width: 30%;" name="content">
+								<option selected="">All</option>
+								<option>Du lịch nước ngoài</option>
+								<option>Du lịch trong nước</option>
+								<option>Khách sạn</option>
+							</select>
+							<input class="form-control me-2" type="search" placeholder="Search" name="search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<ul class="nav-content-mobile">
+							<li class="active"><a href="#" class="active-home">trang chủ</a></li>
+							<li><a href="###">Giới thiệu</a></li>
+							<li><a href="###">Du lịch trong nước</a>
+								<ul class="submenu-mobile">
+									
+												<li><a href="" style="color:#333;">DU LỊCH MIỀN BẮC</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Sapa</a>
+														</li>
+														<li>
+															<a href="">Du lịch Hà Nội</a>
+														</li>
+														<li>
+															<a href="">Du lịch Hạ Long</a>
+														</li>
+															
+													</ul>
+												</li>
+												<li><a href="" style="color:#333">DU LỊCH MIỀN TRUNG</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Đà Nẵng</a>
+														</li>
+														<li>
+															<a href="">Du lịch Phú Yên</a>
+														</li>	
+													</ul>
+												</li>
+												<li><a href="" style="color:#333">DU LỊCH MIỀN NAM</a>
+													<ul type="none" class="ul-sub">
+														<li>
+															<a href="">Du lịch Côn Đảo</a>
+														</li>
+														<li>
+															<a href="">Du lịch Phú Quốc</a>
+														</li>	
+													</ul>
+												</li>
+											
+								</ul>
+							</li>
+							<li><a href="###">Du lịch nước ngoài</a>
+								<ul class="submenu-mobile">
+									<li><a href="" style="color:#333">DU LỊCH CHÂU Á</a>
+										<ul type="none" class="ul-sub">
+											<li>
+												<a href="">Du lịch Hàn Quốc</a>
+											</li>
+											<li>
+												<a href="">Du lịch Nhật Bản</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="" style="color:#333">DU LỊCH CHÂU ÂU</a>
+										<ul type="none" class="ul-sub">
+											<li>
+												<a href="">Du lịch Anh</a>
+											</li>
+											<li>
+												<a href="">Du lịch Nga</a>
+											</li>	
+										</ul>
+									</li>
+									<li><a href="" style="color:#333">DU LỊCH CHÂU MỸ</a>
+										<ul type="none" class="ul-sub">
+											<li>
+												<a href="">Du lịch Mỹ</a>
+											</li>
+											<li>
+												<a href="">Du lịch Canada</a>
+											</li>	
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="###">Tin tức</a></li>
+							<li><a href="###">liên hệ</a></li>
+							<li><a href="###">Đăng nhập</a></li>
+							<li><a href="###"><i class="fa fa-envelope-o" aria-hidden="true"></i>Newsletter</a></li>
+							<li>
+								<a href="#" style="padding: 10px;">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+								<a href="#" style="padding: 10px;">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+								<a href="#" style="padding: 10px;">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+								<a href="#" style="padding: 10px;">
+									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div onclick="closeNav()" id="close-div"></div>
+				</div>
+				<div id="menu">
+					<div class="container" style="height: 60px;">
+						<div class="col-sm-2 option-button">
+							<p type="button" class="close-nav-menu" onclick="openNav()" style="color:black">&#9776;</p>
+						</div>
+						<div class="col-sm-8 menu-img" style="line-height: 55px;">
+							<img src="images/logo-mona-travel.png" alt="logo" loading="lazy">
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>	
 			</div>
 			<div class="tab-tour-content">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -88,9 +309,6 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">TÌM HOTEL</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">TÌM FORM</a>
 					</li>
 				</ul>
 				<div class="tab-content" id="myTabContent">
@@ -107,12 +325,12 @@
 									</select>
 									<select name="price" style="background-color: white; margin-left: 5px; height: 40px; border-radius: 3px; width: 150px;">
 										<option>Giá tour</option>
-										<option disabled="">0 - 1,000,000đ</option>
-										<option>1,000,000đ - 3,000,000đ</option>
-										<option>3,000,000đ - 5,000,000đ</option>
-										<option>5,000,000đ - 7,000,000đ</option>
-										<option>7,000,000đ - 10,000,000đ</option>
-										<option>10,000,000đ - &infin;</option>
+										<option disabled="">0 - 1,000,000&#8363;</option>
+										<option>1,000,000&#8363; - 3,000,000&#8363;</option>
+										<option>3,000,000&#8363; - 5,000,000&#8363;</option>
+										<option>5,000,000&#8363; - 7,000,000&#8363;</option>
+										<option>7,000,000&#8363; - 10,000,000&#8363;</option>
+										<option>10,000,000&#8363; - &infin;</option>
 									</select>
 									<select name="period" style="background-color: margin-left: 5px; white; height: 40px; border-radius: 3px; width: 100px;">
 										<option>Số ngày</option>
@@ -123,9 +341,10 @@
 										<option disabled="">7</option>
 										<option disabled="">10</option>
 									</select>
-									<select style="background-color: white; margin-left: 5px; height: 40px; border-radius: 3px; width: 150px;">
-										<option>Giá tour</option>
-										<option>1,000,000đ - 3,000,000đ</option>
+									<select name="bed" style="background-color: white; margin-left: 5px; height: 40px; border-radius: 3px; width: 150px;">
+										<option>Giường</option>
+										<option>Giường đôi</option>
+										<option>Giường đơn</option>
 									</select>
 									<span style="display: inline-block; border: 1px solid #817C77; background-color: white; height: 40px; border-radius: 3px; width: 100px; line-height: 2.5; padding-left: 5px; margin-left: 5px;">
 										<input type="checkbox" name="onsales"> On sales
@@ -139,194 +358,575 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">xcvzsdvzdvxzcvzsdfvzxcvszdvzxcvzsd</div>
-					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">sdzvszedvsdzvszevszdvsdgvsv</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="container">
+							<div class="row">
+								<form action="#" method="get">
+									
+									<select name="title" style="background-color: white; margin-left: 5px; height: 40px; border-radius: 3px;  width: 150px;">
+										<option>Danh mục</option>
+										<option>Khách sạn</option>
+									</select>
+									<select name="price" style="background-color: white; margin-left: 5px; height: 40px; border-radius: 3px; width: 150px;">
+										<option>Giá</option>
+										<option>0 - 5,000,000&#8363;</option>
+										<option>5,000,000&#8363; - 7,000,000&#8363;</option>
+										<option>7,000,000&#8363; - 10,000,000&#8363;</option>
+									</select>
+									<select name="bed" style="background-color: white; margin-left: 5px; height: 40px; border-radius: 3px; width: 150px;">
+										<option>Loại giường</option>
+										<option>Giường đôi</option>
+										<option>Giường đơn</option>
+									</select>
+									<span style="display: inline-block; border: 1px solid #817C77; background-color: white; height: 40px; border-radius: 3px; width: 100px; line-height: 2.5; padding-left: 5px; margin-left: 5px;">
+										<input type="checkbox" name="onsales"> On sales
+									</span>
+									<button type="submit" name="search" style="background-color: #FADE03; height: 40px; border-radius: 3px; width: 100px; margin-left: 5px; margin-right: 200px;"><b>TÌM HOTEL</b></button>
+
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section>
-			<div class="content-section-2">
-				<div class="container">
-				  	<div class="row">
-				    	<div class="col-md-6 col-sm-12">
-				    		<div class="intro">
-							<p id="intro-title">Chúng tôi là ai?<p>
-							<h1> Công ty LANI & DANI</h1>
-							<p align="justify" id="discript"><b>Tự hào là công ty đầu tiên tại Việt Nam cung cấp dịch vụ trọn gói</b> trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf, cung ứng nguồn lực, dịch vụ huấn luyện, quản lý và hậu cần cho dịch vụ Golf.</p><br>
-							<p align="justify" id="discript">Chúng tôi còn hoạt động trong lĩnh vự xây lắp và đầu tư xây dựng các công trình dân dụng, nhà xưởng công nghiệp, công trình hạ tầng kĩ thuật, đường giao thông, cầu cảng, bờ kè, cầu cống, nạo vét sông rạch, xây dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệu xây dựng.</p>
-							</div>
-				    	</div>
-				    	<div class="col-md-3 col-sm-12">
-				    		<img style="margin-top: 50px; width: 100%;" src="images/introduction-gilf.jpg">
-				    	</div>
-				    	<div class="col-md-3 col-sm-12">
-				    		<img src="images/introduction-man.jpg" style="margin-bottom: 50px; width: 100%; margin-top: 20px;">
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-		</section>
-		<section class="section_3_background">
-			<div class="blur">
-				<div class="section_3">
-					<div align="center" class="title_service">
-						<p id="subtitle">Chuyên gia hàng đầu</p>
-						<h2>Dịch Vụ Sân Golf</h2>
-						<span id="bar"></span>
-						<p id="service-discript">Với đội ngũ thiết kế và xây dựng chuyên nghiệp, <b>Lani & Dani </b>đảm bảo sẽ mang lại những sân golf chất lượng cao, đầy thú vị và thử thách phù hợp cho các golf thủ ở tất cả các mức kỹ năng.</p>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-sm col-md-4 col-sm-12">
-								<div id="service">
-									<img src="images/service-design.jpg">
-									<div class="container-infor-service">
-										<h3 id="comp">Thiết Kế</h3>
-										<p>Đội ngữ thiết kế sân golf hơn 10 năm kinh nghiệm, thi công đạt tiêu chuẩn quốc tế.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm col-md-4 col-sm-12">
-								<div id="service">
-									<img src="images/service-construction.jpg">
-									<div class="container-infor-service">
-										<h3 id="comp">Xây Dựng</h3>
-										<p>Là đơn vị đứng đầu về Thiết kế Thi công sân Golf chuyên nghiệp trên Toàn quốc.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm col-md-4 col-sm-12">
-								<div id="service">
-									<img src="images/service-operation.jpg">
-									<div class="container-infor-service">
-										<h3 id="comp">Vận Hành</h3>
-										<p>Quản lý, điều hành, vận hành các hành động kinh doanh hàng ngày của sân golf.</p>
-									</div>
-								</div>
+		<!-- Block 1 -->
+		<section class="block_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm col-md-4 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/hotel-victoria.png">
+							<div class="container-infor">
+								<p>Đặt Phòng Khách Sạn Victoria Sapa Resort</p>
+								<b>7,399,000&#8363;</b>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm col-sm-12 col-md-4">
-								<div id="service">
-									<img src="images/service-maintenance.jpg">
-									<div class="container-infor-service">
-										<h3 id="comp">Chăm Sóc Bảo Dưỡng</h3>
-										<p>Giúp quá trình sử dụng sân golf luôn đạt tiêu chuẩn kĩ thuật cao nhất.</p>
-									</div>
-								</div>
+					</div>
+					<div class="col-sm col-md-4 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/hotel-hotram.png">
+							<div class="container-infor">
+								<p>Đặt Phòng Khách Sạn Grand Hồ Tràm 5 Sao</p>
+								<b>1.980,000&#8363;</b>
 							</div>
-							<div class="col-sm col-sm-12 col-md-4">
-								<div id="service">
-									<img src="images/service-training.jpg">
-									<div class="container-infor-service">
-										<h3 id="comp">Huấn Luyện</h3>
-										<p>Cung cấp bài học golf từ các chuyên gia quốc tế có trình độ cao, giàu kinh nghiệm.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm col-sm-12 col-md-4">
-								<div id="service">
-									<img src="images/service-lawn-care.jpg">
-									<div class="container-infor-service">
-										<h3 id="comp">Chăm Sóc Cỏ</h3>
-										<p>Tiến hành xử lý cỏ dại kế hợp áp dụng các kỹ thuật chăm sóc cỏ sân golf khoa học</p>
-									</div>
-								</div>
+						</div>
+					</div>
+					<div class="col-sm col-md-4 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/hotel-victoria-phanthiet.png">
+							<div class="container-infor">
+								<p>Beach Resort Phan Thiết Khuyên Mãi Mùa Đông</p>
+								<b>2,990,000&#8363;</b>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="section_4">
-				<div>
-					<div align="center" class="title_service">
-						<p id="subtitle">Uy tín và Chuyên nghiệp</p>
-						<h2>Các Dịch Vụ Khác</h2>
-						<span id="bar"></span>
-						<p id="service-discript">Với định hướng phát triển đa ngành nghề, ngoài lĩnh vực sân Golf, Công ty TNHH LANI&DANI còn tập trung các hoạt động kinh doanh trong các lĩnh vực dưới đây</p>
-					</div>
+		<!-- Block 2 -->
+		<section class="block_2">
+			<div class="head-block2">
+				<h2>CHÀO MỪNG BẠN ĐẾN VỚI MONA MEDIA</h2>
+				<div class="cut-line">
+					<img width="699" height="29" src="http://mauweb.monamedia.net/trendytravel/wp-content/uploads/2018/01/hr-white-three.png" alt="line" loading="lazy" style="width: 50%; height: auto;">
 				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/house.png">
-								<p id="#comp">Xây dựng nhà ở</p>
-							</div>
-						</div>
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/scaffolding.png">
-								<p id="#comp">Xây dựng các công trình kỹ thuật dàn dựng</p>
-							</div>
-						</div>
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/drill.png">
-								<p id="#comp">Phá dỡ</p>
-							</div>
-						</div>
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/blueprint.png">
-								<p id="#comp">Lắp đặt hệ thống điện, cấp thoát nước, sưởi và điều hòa không khí</p>
+			</div>
+			<div class="mid-content-block2">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			</div>
+			<div class="bot-block2">
+				<button type="button" id="btnMona">MONA</button>
+				<button type="button" id="btnMedia">MEDIA</button>
+			</div>
+			
+		</section>
+		<!-- Block 3 -->
+		<section class="section_3">
+			<div class="container">
+			    <div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+			    <div class="row">
+			        <div class="col-md-3 content-column">
+			        	<div class="sec3-head-title">
+			        		<div class="icon">
+	                        	<img src="images/icon-khicau.jpg">
+	                        </div>
+		                    <div class="icon-box-text">
+	                        	<h3>Hoạt động <br>Đặc biệt </h3>
+	                        </div>
+			        	</div>
+                        <div class="sec3-head-content">
+                        	<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+                        </div>
+			        </div>
+			        <div class="col-md-3 content-column">
+			            <div class="sec3-head-title">
+			        		<div class="icon">
+	                        	<img src="images/icon-maybay.jpg">
+	                        </div>
+	                        <div class="icon-box-text">
+	                        	<h3>Sắp xếp <br>Chuyến đi </h3>
+	                        </div>
+			        	</div>
+                        <div class="sec3-head-content">
+			                <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+			            </div>
+			        </div>
+			        <div class="col-md-3 content-column">
+			            <div class="sec3-head-title">
+			        		<div class="icon">
+	                        	<img src="images/icon-laban.jpg">
+	                        </div>
+	                        <div class="icon-box-text">
+	                        	<h3>Hướng dẫn <br>Nhiệt tình </h3>
+	                        </div>
+		                    
+			        	</div>
+                        <div class="sec3-head-content">
+			                <p>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.</p>
+			            </div>
+			        </div>
+			        <div class="col-md-3 content-column">
+			            <div class="sec3-head-title">
+			        		<div class="icon">
+	                        	<img src="images/icon-bando.jpg">
+	                        </div>
+		                    <div class="icon-box-text">
+		                        <h3>Quản lý <br>Vị trí </h3>
+		                    </div>
+			        	</div>
+                        <div class="sec3-head-content">
+			                <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</section>
+
+		<section class="section_4">
+			<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+
+			<div class="container">
+				<div class="product-title">
+					<h4 class="heading-title"><i class="fa fa-heart" aria-hidden="true"></i> NHỮNG GÓI DU LỊCH TỐT NHẤT</h4>
+					<hr class="hr-bot">
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/du-lich-nga.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du lịch Nga 8 ngày mùa thu 2017 khởi hành từ Tp.HCM giá tốt</p>
+								<b>49,900,000&#8363;</b>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/conversation.png">
-								<p id="#comp">Hoạt động thiết kế chuyên dụng và tư vấn kỹ thuật liên quan</p>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/du-lich-anh.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du lịch Anh – Scotland 8 ngày 7 đêm khởi hành từ TP.HCM giá tốt</p>
+								<b>59,900,000&#8363;</b>
 							</div>
 						</div>
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/agreement.png">
-								<p id="#comp">Tư vấn môi giới, đấu giá bất động sản, đấu giá quyền sử dụng đất</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1" style="position: relative;">
+							<span class="sale-span">Giảm giá!</span>
+							<img src="images/du-lich-mien-bac.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Tour Miền Bắc – Hà Nội – Hạ Long – Sapa – Fansipan giá tiết kiệm 2018</p>
+								<b><span class="money-sale">7,599,000&#8363;</span> 6,999,000&#8363;</b>
 							</div>
 						</div>
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/location-pin.png">
-								<p id="#comp">Dịch vụ chăm sóc và duy trì cảnh quan</p>
-							</div>
-						</div>
-						<div class="col-sm col-sm-12 col-md-3">
-							<div id="block-service">
-								<img src="images/Block4 _images/demolition.png">
-								<p id="#comp">Bán buôn máy móc, thiết bị, phụ tùng máy</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/tour-tham-quan-ba-na.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Tour Miền Trung, Tặng vé cáp treo, Buffet trưa, tối & KS4* tại Bà Nà</p>
+								<b>4,699,000&#8363;</b>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section_5_background">
-			<div class="section_5">
-				<div class="container">
-				  	<div class="row">
-				    	<div class="col-sm advertise-discript col-md-6 col-sm-12">
-				    		<div class="advertise">
-								<img src="images/Consultant.png">
-								<p id="title_advertice"> Bạn đang cần tư vấn?</p>
-								<p>Đừng ngần ngại, hãy liên hệ ngay với LaniDani để được tư vấn hoàn toàn miễn phí và báo giá tốt nhất giành riêng cho bạn.</p>
+		<section class="section_5">
+			<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+
+			<div class="container">
+				<div class="product-title">
+					<h4 class="heading-title"><i class="fa fa-clock-o" aria-hidden="true"></i> DU LỊCH TRONG NƯỚC</h4>
+					<hr class="hr-bot">
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/con-dao.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du Lịch Côn Đảo 2 ngày 1 đêm bay từ Sài Gòn</p>
+								<b>5,299,000&#8363;</b>
 							</div>
-				    	</div>
-				    	<div class="col-sm col-md-6 col-sm-12">
-				    		<form action="###" method="Post">
-								<input type="text" name="name" placeholder="Tên của bạn" required>
-								<input type="text" name="email" placeholder="Email của bạn" required>
-								<input type="text" name="phonenumber" placeholder="Số điện thoại" required>
-								<textarea rows="10" cols="40" placeholder="Nội dung"></textarea>
-								<input type="submit" name="send" value="GỬI">
-							</form>
-				    	</div>
-				  	</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1" style="position: relative;">
+							<span class="sale-span">Giảm giá!</span>
+							<img src="images/phu-quoc.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du Lịch Phú Quốc – Nam Đảo 3 ngày 2 đêm dịp Noel & Tết Dương Lịch 2018</p>
+								<b><span class="money-sale">4,999,000&#8363;</span> 4,099,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/phu-yen.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du Lịch Phú Yên 3 ngày 2 đêm giá tiết kiệm dịp tết Dương Lịch 2018</p>
+								<b>4,290,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/tour-tham-quan-ba-na.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Tour Miền Trung, Tặng vé cáp treo, Buffet trưa, tối & KS4* tại Bà Nà</p>
+								<b>4,699,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section_6">
+			<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+
+			<div class="container">
+				<div class="product-title">
+					<h4 class="heading-title"><i class="fa fa-clock-o" aria-hidden="true"></i> DU LỊCH NƯỚC NGOÀI</h4>
+					<hr class="hr-bot">
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/canada.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du lịch Canada 10 ngày mùa thu 2017 giá tốt khởi hành từ Sài Gòn</p>
+								<b>97,900,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/new-york.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du lịch bờ Tây Hoa Kỳ 7 ngày Los Angeles – Las Vegas giá tốt 2018</p>
+								<b>34,900,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/nga-2.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du lịch Nga 8 ngày mùa thu 2017 khởi hành từ Tp.HCM giá tốt</p>
+								<b>49,900,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="hotel-block1">
+							<img src="images/du-lich-anh.jpg" alt="destination" laoding="lazy">
+							<div class="container-infor">
+								<p>Du lịch Anh – Scotland 8 ngày 7 đêm khởi hành từ TP.HCM giá tốt</p>
+								<b>59,900,000&#8363;</b>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block_7 block_2">
+			<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+			<div class="block7-title">
+				<h4>CẢM NGHĨ CỦA KHÁCH HÀNG</h4>
+				<hr>
+			</div>
+			<div class="carousel-slide">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				    <ol class="carousel-indicators">
+				        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				    </ol>
+				    <div class="carousel-inner">
+				        <div class="carousel-item active">
+				            <div class="container">
+				        		<div class="customer-feedback row">
+					            	<div class="customer-avt col-md-2">
+					            		<img src="images/customer1.jpg" alt="customer" laoding="lazy">
+					            	</div>
+					            	<div class="col-md-10">
+					            		<div class="stars">
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            		</div>
+					            		<div class="fb-content">
+					            			<p>
+					            				“Vivamus facilisis mi a mauris ultrices fermentum. Aliquam porta eleifend mi non laoreet. Donec ornare vitae nulla pulvinar tristique. Sed vulputate in sapien eu eleifend. Donec id rhoncus mauris. Cras adipiscing at magna in volutpat. Nullam eleifend elit dui, quis vulputate magna mattis ut. Vestibulum ornare arcu mauris, sed.”
+					            			</p>
+					            		</div>
+					            		<div class="source-fb">
+					            			<p><b>Mark Jance</b> / Facebook</p>
+					            		</div>
+					            	</div>
+					            </div>
+				        	</div>
+				        </div>
+				        <div class="carousel-item">
+				        	<div class="container">
+				        		<div class="customer-feedback row">
+					            	<div class="customer-avt col-md-2">
+					            		<img src="images/customer2.jpg" alt="customer" laoding="lazy">
+					            	</div>
+					            	<div class="col-md-10">
+					            		<div class="stars">
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            		</div>
+					            		<div class="fb-content">
+					            			<p>
+					            				“Donec quis vulputate lectus. Sed tempor venenatis elementum. Cras commodo lacus nec imperdiet dignissim. Nunc scelerisque interdum diam a aliquam. Vestibulum eget massa auctor, consequat quam ut, auctor nibh. Nam volutpat odio sit amet ullamcorper placerat. Aliquam porta tincidunt urna ac commodo.”
+					            			</p>
+					            		</div>
+					            		<div class="source-fb">
+					            			<p><b>Mark Jance</b> / Facebook</p>
+					            		</div>
+					            	</div>
+					            </div>
+				        	</div>
+				        </div>
+				        <div class="carousel-item">
+				            <div class="container">
+				        		<div class="customer-feedback row">
+					            	<div class="customer-avt col-md-2">
+					            		<img src="images/customer3.jpg" alt="customer" laoding="lazy">
+					            	</div>
+					            	<div class="col-md-10">
+					            		<div class="stars">
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            			<i class="fa fa-star" aria-hidden="true"></i>
+					            		</div>
+					            		<div class="fb-content">
+					            			<p>
+					            				“The overall use of flatsome is very VERY useful. It lacks very few, if any, things! I loved it and have created my first ever website Punsteronline.com! Best yet, flatsome gets free updates that are great! (and the support is amazing as well!:)”
+					            			</p>
+					            		</div>
+					            		<div class="source-fb">
+					            			<p><b>Mark Jance</b> / Facebook</p>
+					            		</div>
+					            	</div>
+					            </div>
+				        	</div>
+				        </div>
+				    </div>
+				    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="section_8">
+			<div class="tab-menu-block8">
+				<div id="tabs">
+				    <ul	>
+				        <li>
+				            <a href="#tabs-1" style="height: 40px;">Why Mona Media?</a>
+				        </li>
+				        <li>
+				            <a href="#tabs-2" style="height: 40px;">Theme Features</a>
+				        </li>
+				        <li>
+				            <a href="#tabs-3" style="height: 40px;">Multiple Elements</a>
+				        </li>
+				    </ul>
+				    <div id="tabs-1">
+				        <div class="container">
+				        	<div class="row">
+				        		<div class="col-sm-8 block8-content">
+				        			<h5>Why should you love Mona Media?</h5>
+									<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+									<p style="margin-bottom: 50px;">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+				        		</div>
+				        		<div class="col-sm-4">
+				        			<img src="images/tab-image.png" alt="tab image" loading="lazy">
+				        		</div>
+				        	</div>
+				        </div>
+				    </div>
+				    <div id="tabs-2">
+				        <div class="container">
+				        	<div class="row">
+				        		<div class="col-sm-8 block8-content">
+				        			<h5>Theme Features</h5>
+									<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+									<p style="margin-bottom: 50px;">Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+				        		</div>
+				        		<div class="col-sm-4">
+				        			<img src="images/tab-image.png" alt="tab image" loading="lazy">
+				        		</div>
+				        	</div>
+				        </div>
+				    </div>
+				    <div id="tabs-3">
+				       <div class="container">
+				        	<div class="row">
+				        		<div class="col-sm-8 block8-content">
+				        			<h5>Multiple Elements</h5>
+									<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+									<p style="margin-bottom: 50px;">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+				        		</div>
+				        		<div class="col-sm-4">
+				        			<img src="images/tab-image.png" alt="tab image" loading="lazy">
+				        		</div>
+				        	</div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</section>
+		<section class="section_9">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 section9-content">
+						<h4>Những điều thú vị tại</h4>
+						<h2>MONA MEDIA</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="col-sm-6 section9-video">
+						<iframe width="auto" height="100%" src="https://www.youtube.com/embed/OHAWwaYu2H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section_10">
+			<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+						<div class="title-block10">
+							<div class="product-title">
+								<h4 class="heading-title">NHỮNG CÂU HỎI THƯỜNG GẶP</h4>
+								<hr class="hr-bot">
+								<hr>
+							</div>
+						</div>
+						<div class="collapsible-block10">
+							<div class="accordion">
+							    <h3>We have the best Travel Packages</h3>
+							    <div>
+							        <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+							    </div>
+							    <h3>Best travel guides available throught the trip</h3>
+							    <div>
+							        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							    </div>
+							    <h3>Complete packages till date</h3>
+							    <div>
+							        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							    
+							    </div>
+							    <h3>Best prices and Discounts for Memberships.</h3>
+							    <div>
+							        <p>WE ARE THE BEST IN BUSINESS<br>
+									We have the best Travel Packages<br>
+									Best travel guides available throught the trip<br>
+									Complete packages till date<br>
+									Best prices and Discounts for Memberships.<br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							    </div>
+							    <h3>Various other features for a travel package</h3>
+							    <div>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos..</p>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="gap-element" style="display:block; height:auto; padding-top:60px"></div>
+						<div class="title-block10">
+							<div class="product-title">
+								<h4 class="heading-title">TIÊU CHÍ LÀM VIỆC</h4>
+								<hr class="hr-bot">
+								<hr>
+							</div>
+						</div>
+						<div class="working-block10">
+							<div class="row-working">
+								<div class="container">
+									<div class="row">
+										<div class="col-3">
+											<img src="images/medal.png">
+										</div>
+										<div class="col-9">
+											<h5>LIGHT WEIGHT</h5>
+											<p>Sed at tellus quis enim dictum mollis. Donec nec interdum nulla. Aenean adipiscing nunc nec augue pretium, eget eros convallis..</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<img src="images/watch.png">
+										</div>
+										<div class="col-9">
+											<h5>PRODUCT PAGE</h5>
+											<p>Curabitur placerat pulvinar gravida. Vestibulum nec erat id diam condimentum feugiat. Duis a augue sit amet odio blandit luctus.</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<img src="images/gear.png">
+										</div>
+										<div class="col-9">
+											<h5>LATEST DESIGN TREND</h5>
+											<p>Aliquam at dolor feugiat, varius velit rhoncus, pellentesque enim. Quisque pharetra in lacus id pretium. Suspendisse est id condimentum.</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<img src="images/clean.png">
+										</div>
+										<div class="col-9">
+											<h5>UNLIMITED COLORS</h5>
+											<p>Nulla pharetra tortor massa, et fermentum rhoncus elit consectetur ac. Vivamus rhoncus nisl lectus, sed blandit tortor placerat sit amet.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -417,12 +1017,15 @@
 		   		$('#menu-bar').fadeIn();
 		   		$('#menu-bar').css({"top": "0px",
 	"opacity": "0.9"});
+		   		$('.submenu').css({"z-index": "99px",
+	"opacity": "1"});
 		   		$('#head-infor').css("display","none");
-		   		$('.menu-tab').css("opacity","1");
 
 		    } else {
 		        $('#myBtn').fadeOut();
 		        $('#menu-bar').css({"top": "36px",
+	"opacity": "1"});
+		        $('.submenu').css({"z-index": "99px",
 	"opacity": "1"});
 		        $('#head-infor').css("display","block");
 		    }
@@ -432,6 +1035,28 @@
 		    $("html, body").animate({scrollTop: 0}, 700);
 		    
 		 });
+		function openNav() {
+			$('#mobible-menu').css({'backgroundColor':'white', 'z-index':'100', 'width':'60%'});
+			$('.mobible-menu').css({'backgroundColor':'rgba(0,0,0,0.4)', 'width':'100%','position':'fixed', 'top':'0', 'bottom':'0', 'z-index':'90'});
+			$('#close-div').css({'backgroundColor':'rgba(0,0,0,0.4)', 'width':'100%','position':'fixed', 'top':'0', 'bottom':'0'})
+
+		}
+		function closeNav() {
+			$('#mobible-menu').css('width','0');
+			$('.mobible-menu').css('width','0');
+			console.log('aaaaaa');
+			$('#close-div').css('width','0');
+		}
+		$(document).ready(function(){
+			$('.mobible-menu').click(closeNav());
+
+		});
+		$( function() {
+			$( "#tabs" ).tabs();
+		} );
+		$( function() {
+		    $( ".accordion" ).accordion();
+		} );
 
 	</script>
 
