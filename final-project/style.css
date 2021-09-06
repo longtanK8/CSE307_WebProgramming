@@ -553,6 +553,89 @@ border-bottom-left-radius: 5px;
 .working-block10 p{
 	color: #707070;
 }
+
+/*Block 11*/
+.section_11 a{
+	text-decoration: none;
+}
+.section_11 h5{
+	margin-top: 10px;
+	color: #333;
+}
+.section_11 .hotel-block1{
+	position: relative;
+}
+.section_11 .btnSection11{
+	border: 2px solid #ccc;
+	background-color: #fff;
+	color: #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.btnSection11:hover{
+	background-color: #087DC2;
+	color: #fff;
+	border: 2px solid #087DC2;
+}
+.time-b11{
+	position: absolute;
+	top: 25px;
+	left: -5px;
+	display: block;
+	border: 2px solid #087DC2;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	text-align: center;
+
+}
+.time-b11 h6, .time-b11 p{
+	color: #087DC2;
+}
+.time-b11 h6{
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 16px;
+}
+.time-b11 p{
+	margin-top: 0;
+	line-height: 5px;
+	font-size: 12px;
+}
+.section_11 .hotel-block1:hover .time-b11{
+	background-color: #087DC2;
+	
+}
+.section_11 .hotel-block1:hover h6, .hotel-block1:hover .time-b11 p{
+	color: #fff;
+}
+.b11-hr{
+	border: 1px solid #ccc;
+	width: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*Block 12*/
+.section_12{
+	background-image: url("images/cover-background-b12.jpg");
+	background-size: cover;
+	padding-bottom: 30px;
+}
+.mid-form{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%px;
+	height: 100%px;
+	background-image: url("images/background-world.jpg");
+	background-size: 360px 195px;
+}
+.form-title{
+	margin-bottom: 30px;
+}
 /*End of Body*/
 /*Scroll top button*/
 #myBtn{
